@@ -7,12 +7,12 @@ MainWindow::MainWindow(QWidget *parent)
     count(0)
 {
     ui->setupUi(this);
-    connect(ui->pushButton, &QPushButton::clicked, this, &MainWindow::on_pushButton_clicked);
+    // connect(ui->pushButton, &QPushButton::clicked, this, &MainWindow::on_pushButton_clicked);
 }
 
 void MainWindow::on_pushButton_clicked()
 {
-    this->count++;
+    count++;
     ui->label->setText(QString::number(count));
 }
 
@@ -20,4 +20,3 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-
