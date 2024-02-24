@@ -22,11 +22,11 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_AddButton_clicked();
+    void    on_AddButton_clicked();
 
-    void on_RemoveButton_clicked();
+    void    on_RemoveButton_clicked();
 
-    void on_RemoveAllButton_clicked();
+    void    on_RemoveAllButton_clicked();
 
 private:
     Ui::MainWindow *ui;
