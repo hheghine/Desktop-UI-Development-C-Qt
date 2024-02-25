@@ -6,8 +6,13 @@
 #include <QTextStream>
 #include <QFile>
 #include <QTextStream>
+#include <QDebug>
+#include <QFile>
+#include <QStandardPaths>
 
 #include "newfile.h"
+#include "savefile.h"
+#include "ui_savefile.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -23,10 +28,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    void    saveToFile(const QString &fileName);
 private slots:
     void on_actionNew_File_triggered();
+    void on_actionSave_triggered();
+    void on_actionOpen_triggered();
 
 private:
     Ui::MainWindow *ui;
 };
+
 #endif // MAINWINDOW_H
