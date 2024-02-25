@@ -8,11 +8,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 }
 
-MainWindow::~MainWindow()
-{
-    delete ui;
-}
-
 void MainWindow::on_AddButton_clicked()
 {
     QListWidgetItem *item = new QListWidgetItem(ui->TaskTxt->text(), ui->listWidget);
@@ -23,7 +18,6 @@ void MainWindow::on_AddButton_clicked()
     ui->TaskTxt->setFocus();
 }
 
-
 void MainWindow::on_RemoveButton_clicked()
 {
     QListWidgetItem *item = ui->listWidget->takeItem(ui->listWidget->currentRow());
@@ -31,9 +25,12 @@ void MainWindow::on_RemoveButton_clicked()
     delete item;
 }
 
-
 void MainWindow::on_RemoveAllButton_clicked()
 {
     ui->listWidget->clear();
 }
 
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
