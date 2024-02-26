@@ -72,7 +72,7 @@ color: rgb(0, 0, 0);</string>
      <string notr="true">color: rgb(46, 194, 126);</string>
     </property>
     <property name="text">
-     <string>BIMO</string>
+     <string>BMO</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
