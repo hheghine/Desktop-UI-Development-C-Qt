@@ -48,3 +48,24 @@
 * `Core Widget:` Use a QTextEdit for the main editing area. Add a menu bar with actions for Open, Save, and Exit.
 * `File Operations:` Implement slots for each menu action using QFileDialog to open and save files, and QTextEdit's methods to read/write text.
 
+---
+
+## Task 6. Simple Drawing Application
+*Objective: Allow users to draw simple shapes (lines, rectangles) on a canvas.*
+
+### Detailed Explanation:
+* `Custom Widget:` Subclass QWidget and reimplement the paintEvent to draw shapes. Store drawn shapes' data.
+* `Drawing Logic:` Track mouse events to capture the start and end points of shapes. Use QPainter in the paintEvent to draw stored shapes.
+* `Tool Selection:` Add buttons or a toolbar to select which shape to draw.
+
+---
+
+## Task 7. Calculator
+*Objective: Implement a basic calculator for arithmetic operations.*
+
+### Detailed Explanation:
+* `Layout:` Use QGridLayout to arrange buttons for digits and operations. A QLineEdit at the top displays the input and result.
+* `Operation Logic:` Connect button clicks to slots that update the QLineEdit with inputs. Implement logic to calculate and display results based on the operations entered.
+
+---
+
